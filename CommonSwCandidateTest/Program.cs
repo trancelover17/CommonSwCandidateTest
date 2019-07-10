@@ -15,8 +15,7 @@ namespace CommonSwCandidateTest
         {
             // first, we compare by 'PlannedStart'
             int result = DateTime.Compare(a.PlannedStart, b.PlannedStart);
-            if (result == 0) // if previous comparison returns '0' - dates are equal
-            {
+            if (result == 0) { // if previous comparison returns '0' - dates are equal
                 result = DateTime.Compare(a.PlannedEnd, b.PlannedEnd); // then compare by 'PlannedEnd'
                 if (result == 0) // if previous comparison returns '0' - dates are equal
                     result = string.Compare(a.Name, b.Name); // and then compare by 'Name'
@@ -48,7 +47,7 @@ namespace CommonSwCandidateTest
         /// </summary>
         public void MedianCalculation()
         {
-            /* I'm using here standard 'Sort()' method, which is worst-case O(n^2) complexity.
+            /* I'm using here standard 'Sort()' method for list sorting, which is worst-case O(n^2) complexity.
              * But, for more efficiency I might use here 'Median of medians-algorithm finds an approximate 
              * median in linear time only. But, in the task weren't any complexity requirements, so I use 
              * standard 'Sort()' for more easy and solution.
@@ -56,10 +55,10 @@ namespace CommonSwCandidateTest
             double median = 0; // median value
             List<byte> coml_vals = items_collection.Select(x => x.Value.Completed).ToList(); // get list of all 'Completed' values
             coml_vals.Sort(); // sort list
-            if (coml_vals.Count % 2 != 0) // if count of elements is even, median - is middle element
+            if (coml_vals.Count % 2 != 0) // if count of elements is odd, median - is middle element
                 median = coml_vals[coml_vals.Count / 2];
             // else median is half-sum of two middle elements
-            else median = (coml_vals[(coml_vals.Count - 1) / 2] + coml_vals[coml_vals.Count / 2]) / 2.0;
+            else median = (coml_vals[(coml_vals.Count - 1) / 2] + coml_vals[coml_vals.Count / 2]) / 2;
             Console.WriteLine("Median is: {0}", median);
         }
         /// <summary>
@@ -96,15 +95,14 @@ namespace CommonSwCandidateTest
 
             var childrens = all_elements.Where(x => x.ParentId == current.Id).ToList(); // get all childrens of 'current' item
             
-            if (output == OutputType.CSVFile)
-            {
+            if (output == OutputType.CSVFile) {
                 // if item has any childs, it's 'Completed' property will be recalculated (even if the value not
                 // changed - we need to recalculate it), so we write this information to file
-                bool compl_recalc = childrens.Count > 0 ? true : false;
+                bool is_recalculated = childrens.Count > 0 ? true : false;
 
                 csv_string += new string('-', level) + "Level: " + level + " Name: " + current.Name + " PlannedStart:"
                     + current.PlannedStart + " PlannedEnd: " + current.PlannedEnd + " Completed: " + current.Completed
-                    + " Was completition calculated: " + compl_recalc + "\n";                
+                    + " Was completition calculated: " + is_recalculated + "\n";                
             }
 
             foreach (var child in childrens) // push all childrens to 'myStack' for 'Completed' property recalculation
