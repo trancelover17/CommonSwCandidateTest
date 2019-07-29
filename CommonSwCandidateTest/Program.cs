@@ -26,7 +26,7 @@ namespace CommonSwCandidateTest
     public class CustomContainer
     {
         Dictionary<int, BaseItem> items_collection = new Dictionary<int, BaseItem>(); //private collection for storing 'BaseItem' elements
-                public static BaseItemComparer bic { get { return new BaseItemComparer(); } } // custom comparer for sorting 'BaseItem' values
+        public static BaseItemComparer bic { get { return new BaseItemComparer(); } } // custom comparer for sorting 'BaseItem' values
         Stack<BaseItem> myStack = new Stack<BaseItem>(); // stack of 'BaseItem' elements for recalculation 'Completed' property in correct order
         string csv_string = string.Empty; // string with values for writing to CVS file
 
