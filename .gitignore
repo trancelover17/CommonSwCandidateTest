@@ -4,7 +4,7 @@
 
 /CommonSwCandidateTest/.vs/CommonSwCandidateTest/v16/Server/sqlite3
 /CommonSwCandidateTest/bin
-/CommonSwCandidateTest/debug
+/CommonSwCandidateTest/obj
 /CommonSwCandidateTest/.vs
 .gitignore
 hiararchical-Vyacheslav.csv
