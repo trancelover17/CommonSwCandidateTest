@@ -8,13 +8,18 @@ namespace CommonSwCandidateTest_2
     {
         public int Compare(BaseItem a, BaseItem b)
         {
-            // first, we compare by 'PlannedStart'
-            int result = DateTime.Compare(a.PlannedStart, b.PlannedStart);
+            // first, we compare by 'PlannedStart', if it's comparison returns '0' - dates are equal
+            var result = DateTime.Compare(a.PlannedStart, b.PlannedStart);
             if (result == 0)
-            { // if previous comparison returns '0' - dates are equal
-                result = DateTime.Compare(a.PlannedEnd, b.PlannedEnd); // then compare by 'PlannedEnd'
-                if (result == 0) // if previous comparison returns '0' - dates are equal
-                    result = string.Compare(a.Name, b.Name); // and then compare by 'Name'
+            {
+                // then compare by 'PlannedEnd'
+                // if it's comparison returns '0' - dates are equal
+                result = DateTime.Compare(a.PlannedEnd, b.PlannedEnd); 
+                if (result == 0)
+                {
+                    // and then compare by 'Name'
+                    result = string.Compare(a.Name, b.Name);
+                }                   
             }
             return result;
         }

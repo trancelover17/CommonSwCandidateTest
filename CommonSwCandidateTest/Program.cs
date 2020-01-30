@@ -10,12 +10,7 @@ namespace CommonSwCandidateTest_2
     {
         static void Main()
         {
-            ItemRepository it = new ItemRepository(); // object for call 'GetAllItems()' method
-            IEnumerable<BaseItem> ItemsList = it.GetAllItems(); // getting all items
-            CustomContainer myCont = new CustomContainer(); // creating object of 'CustomDictionaryWrapper' class
-
-            foreach (var l in ItemsList) // add all items from 'ItemsList' to internal collection in 'myDict'
-                myCont.Add(l.Id, l);
+            CustomContainer myCont = new CustomContainer(new ItemRepository().GetAllItems()); // creating object of 'CustomDictionaryWrapper' class
 
             myCont.DisplayHierarchicalTree(OutputType.Console); // call method for displaying hierarchical tree of elements
             myCont.MedianCalculation(); // call method for calculation and print median value of 'Completed' property
