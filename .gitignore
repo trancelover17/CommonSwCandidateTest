@@ -5,3 +5,5 @@
 /CommonSwCandidateTest/.vs/CommonSwCandidateTest/v16/Server/sqlite3
 /CommonSwCandidateTest/bin
 /CommonSwCandidateTest/debug
+/CommonSwCandidateTest/.vs
+.gitignore
