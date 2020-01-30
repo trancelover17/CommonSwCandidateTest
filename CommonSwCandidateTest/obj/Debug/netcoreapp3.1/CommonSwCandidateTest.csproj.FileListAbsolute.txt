@@ -1,0 +1,13 @@
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\bin\Debug\netcoreapp3.1\CommonSwCandidateTest.exe
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\bin\Debug\netcoreapp3.1\CommonSwCandidateTest.deps.json
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\bin\Debug\netcoreapp3.1\CommonSwCandidateTest.runtimeconfig.json
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\bin\Debug\netcoreapp3.1\CommonSwCandidateTest.runtimeconfig.dev.json
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\bin\Debug\netcoreapp3.1\CommonSwCandidateTest.dll
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\bin\Debug\netcoreapp3.1\CommonSwCandidateTest.pdb
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\bin\Debug\netcoreapp3.1\CommonSwCandidateTest.Data.dll
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\obj\Debug\netcoreapp3.1\CommonSwCandidateTest.csprojAssemblyReference.cache
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\obj\Debug\netcoreapp3.1\CommonSwCandidateTest.AssemblyInfoInputs.cache
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\obj\Debug\netcoreapp3.1\CommonSwCandidateTest.AssemblyInfo.cs
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\obj\Debug\netcoreapp3.1\CommonSwCandidateTest.csproj.CopyComplete
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\obj\Debug\netcoreapp3.1\CommonSwCandidateTest.dll
+C:\Users\vyacheslav.v.sorokin\Documents\!Разработки мои\Csharp\CommonSwCandidateTest\CommonSwCandidateTest\obj\Debug\netcoreapp3.1\CommonSwCandidateTest.pdb
