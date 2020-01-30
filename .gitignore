@@ -2,4 +2,4 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/CommonSwCandidateTest/.vs/CommonSwCandidateTest/v16
+/CommonSwCandidateTest/.vs/CommonSwCandidateTest/v16/Server/sqlite3
